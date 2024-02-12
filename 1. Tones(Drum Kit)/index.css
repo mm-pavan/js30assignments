@@ -1,0 +1,66 @@
+.maincontainer {
+  min-height: 100vh;
+  background-image: url("./images/tones background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+h1 {
+  color: rgb(183, 248, 54);
+  text-align: center;
+  font-family: "roboto";
+  font-weight: bolder;
+  font-size: 50px;
+  height: 10%;
+}
+.backgroundContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.divContainer {
+  transition: all 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 22%;
+  height: 150px;
+  border-radius: 7%;
+  border: 3px solid rgb(126, 255, 34);
+  background-color: rgb(202, 232, 141, 0.5);
+}
+@media screen and (max-width: 768px) {
+  .divContainer {
+    width: 35%;
+  }
+  h1 {
+    font-size: 30px;
+  }
+}
+.innerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10%;
+  width: 30%;
+  height: 30%;
+  background-color: rgb(163, 241, 111);
+}
+.textEle {
+  color: rgb(60, 72, 43);
+  font-family: "roboto";
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.playing {
+  transform: scale(1.5);
+  border-color: #ffc600;
+  border: 2px slid yellow;
+  box-shadow: 0 0 1rem #ffc600;
+}
